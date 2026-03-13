@@ -1,0 +1,442 @@
+.logo_div img{
+width: 100px;
+    background-color: #80605b;
+}
+
+nav{
+    display: flex;
+    justify-content: start;
+}
+.config_div{
+    display: flex;
+    justify-content: space-between;
+}
+.button_config_div{
+    background-color: #80605b;
+}
+.dropdown {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    background-color: #80605b;
+    max-height: 30px;
+    color: #fff;
+    transition: max-height 0.3s ;
+}
+
+.dropdown:hover {
+    background-color: #80605b;
+    max-height: 550px;
+    transition: max-height 0.3s ;
+    overflow-y: scroll;
+ }
+
+
+
+.dropdown a {
+    transition: background-color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: yellowgreen;
+}
+
+/*method flag*/
+.methodflag{
+    margin-left: 2rem;
+    margin-top: 2px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #a34e24;  
+    height: 40px;
+    min-width: 40px;
+    font-size:medium;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    padding: 4px;
+}
+
+
+
+/*progressbar*/
+.progress-container {
+    margin-top: 3px;
+    width: 100%;
+    height: 7px;
+    background-color: #f1f1f1;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/*config button*/
+.btnconfig{
+    height: 20px;
+    background-color: #004aad;
+    color: white;  
+}
+
+
+/* The Modal (background) */
+.modal {
+    color:black;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Modal Content */
+.modal-content-static-buttons {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+/*separator container*/
+.separatorContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.panel {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.dividerStyle {
+    background-color: #ddd;
+    width: 10px;
+    cursor: ew-resize;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.button-container-for-etape{
+    margin-left: 0;
+    background-color: #80605b;
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+.button-container{
+    display:flex;
+    flex-direction: row;
+justify-content: flex-start;
+    
+}
+
+/*buttons default for etape and source*/
+a {
+    text-decoration: none;
+    color:white;
+    display: block;
+    min-width: 50px;
+    min-height: 25px;
+    text-align: left; 
+    border-radius: 0 !important;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+   }
+   
+ button.custom-button {
+   
+     background-color:  #183A1D; 
+     color: white;
+     border: none;
+     text-decoration: none; 
+     display: inline-block; 
+     font-size: 18px;
+     margin:  3px;
+     width: 200px;  
+ }
+
+button.custom-button-etape {
+    background-color: #00008B;
+    color: white;
+    border: none;
+    padding: 4px 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    height: 30px;
+    margin:  2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+div.remove-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/*project vision html*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+  
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 5; 
+        background-color: lightgray;
+        min-height: 15rem;
+        width:60rem;
+        border-top: solid 2px;
+        border-left: solid 2px;
+        border-right: solid 2px;
+    }
+    .div1 img{
+        width: 50px !important;
+        height: 50px !important;
+    }   
+    .parent h3{
+        
+        padding-left: 1rem;
+     }
+ 
+     .parent p{
+        
+        font-size: small;
+        padding: 0.3rem;
+     }
+
+
+     .parent textarea{
+       margin-bottom: auto;
+       margin-left: 1rem;
+     }
+    .div2 {
+         grid-area: 2 / 1 / 6 / 2;
+         background-color: lightgray;
+         height: 28rem;
+         width:15rem;
+         border: solid 2px;
+         border-right: solid 1px;
+         }
+    .div2 img{
+        width: 50px !important;
+        height: 50px !important;
+    }     
+    .div3 {
+         grid-area: 2 / 2 / 6 / 3;
+         background-color: lightgray;
+         height: 28rem;
+         width:15rem;
+         border: solid 2px;
+         border-right: solid 1px;
+         border-left: solid 1px;
+         }
+    .div3 img{
+    width: 50px !important;
+    height: 50px !important;
+}  
+
+    .div4 { 
+        grid-area: 2 / 3 / 6 / 4; 
+        background-color: lightgray;
+        height: 28rem;
+        width:15rem;
+        border: solid 2px;
+        border-right: solid 1px;
+        border-left: solid 1px;
+    }
+    .div4 img{
+        width: 50px !important;
+        height: 50px !important;
+    }  
+    .div5 { 
+        grid-area: 2 / 4 / 6 / 5;
+        background-color: lightgray;
+        height: 28rem;
+        width:15rem;
+        border: solid 2px;
+        border-left: solid 1px;
+     }
+     .div5 img{
+        width: 50px !important;
+        height: 50px !important;
+    }  
+
+/*project visiov html*/
+
+
+/*project roadmap*/
+
+.road_map{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color:lightgray;
+}
+
+.road_map value{
+   
+    width: 5rem;
+}
+#versions-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 0;
+  }
+  
+.parentro {
+   /*  background-color:lightgray; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+    
+    }
+    .parentro p{
+        font-size: small;
+        margin: 1rem;
+     }
+     .parentro h3{
+        
+        margin: 0.5rem;
+     }
+
+     .parentro {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .divro1,
+    .divro2,
+    .divro3,
+    .divro4,
+    .divro5 {
+        height: 15rem;
+        width: 15rem;
+        border: solid 1px;
+        margin-top: 11px;
+    }
+
+    .road_map{
+       display: flex;
+    }
+
+    .divro6 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+      }
+    
+    .divro1 img,
+    .divro2 img,
+    .divro3 img,
+    .divro4 img,
+    .divro5 img {
+        margin-left: 1rem;
+        width: 45px !important;
+        height: 45px !important;
+    }
+       
+/*project roadmap*/
+/*home table*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+
+/*home top div*/
+.topdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.topdiv button{
+   height: 30px;
+   background-color: #004aad;
+   color: #FFFFFF;
+}
+
+/*product vision checkox inline with p*/
+.checkboxVision input,
+.checkboxVision p {
+  display: inline-block
+  
+}
+.checkbox_allow_div label {
+    display: inline-block;
+  }
+.checkboxVision p {
+    width: fit-content;
+    
+  }
+.checkbox_allow_div {
+    display: inline-block'
+  }
+/*product vision checkox inline with p*/
